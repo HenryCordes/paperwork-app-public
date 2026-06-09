@@ -1,0 +1,137 @@
+.dashboard-summary-card {
+  height: 100%;
+}
+
+.dashboard-summary-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.dashboard-summary-label {
+  font-size: 0.9rem;
+  color: var(--ion-color-medium);
+}
+
+.small-title {
+  font-size: 1rem;
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+}
+ion-card.small {
+  padding: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+ion-card-content.small {
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 576px) {
+  ion-card.ion-text-center {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding: 0;
+  }
+
+  ion-card-header {
+    padding: 10px;
+  }
+
+  ion-card-content {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+    margin: 0;
+  }
+}
+
+.dark-theme .dashboard-chart-container {
+  background-color: var(--ion-background-color);
+}
+
+.dashboard-chart-container {
+  position: relative;
+  width: calc(100vw - 92px);
+  min-height: 350px;
+}
+
+.dashboard-chart {
+  width: calc(100vw - 92px);
+  height: 350px;
+  overflow-x: auto;
+}
+
+.chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.legend-color {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+}
+
+.profit-text {
+  color: var(--ion-color-success);
+  font-weight: bold;
+}
+
+.loss-text {
+  color: var(--ion-color-danger);
+  font-weight: bold;
+  border-radius: 2px;
+}
+
+/* Category breakdown styles */
+.category-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.category-bar {
+  height: 8px;
+  border-radius: 4px;
+  margin-top: 4px;
+}
+
+.category-amount {
+  font-weight: bold;
+}
+
+.category-percentage {
+  color: var(--ion-color-medium);
+  font-size: 0.8rem;
+}
+
+/* Period selector styles */
+.year-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.year-button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: var(--ion-color-primary);
+}

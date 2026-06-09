@@ -1,0 +1,7 @@
+{
+  "name": "Paperwork",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}

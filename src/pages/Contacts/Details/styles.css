@@ -1,0 +1,44 @@
+.contact-info-label {
+  font-weight: 500;
+}
+
+.contact-detail-section {
+  margin-bottom: 16px;
+}
+
+ion-card-header.contact-header {
+  padding-bottom: 8px;
+}
+
+ion-item.contact-item {
+  --padding-start: 0;
+}
+
+ion-note.contact-type {
+  margin-top: 4px;
+  font-size: 0.9rem;
+}
+
+.contact-icon {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+ion-card-content.contact-card-content {
+  padding-top: 0;
+}
+
+ion-card {
+  margin-bottom: 1rem;
+  --background: #f5f5f5;
+}
+
+@media (prefers-color-scheme: dark) {
+  ion-card {
+    margin-bottom: 1rem;
+    --background: var(
+      --ion-card-background,
+      var(--ion-item-background, var(--ion-background-color, #fff))
+    );
+  }
+}

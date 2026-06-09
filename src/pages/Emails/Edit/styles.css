@@ -1,0 +1,162 @@
+ion-card {
+  margin-bottom: 1rem;
+  --background: #f5f5f5;
+}
+
+@media (prefers-color-scheme: dark) {
+  ion-card {
+    margin-bottom: 1rem;
+    --background: var(
+      --ion-card-background,
+      var(--ion-item-background, var(--ion-background-color, #fff))
+    );
+  }
+}
+
+.form-error {
+  color: #f44336;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.editor-container {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  min-height: 200px;
+  margin-bottom: 20px;
+}
+
+.required-field::after {
+  content: " *";
+  color: #f44336;
+}
+
+.status-toggle {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.divider {
+  margin-top: 1rem;
+}
+
+/* TINYMCE: START - style overrides */
+.tox:not(.tox-tinymce-inline) .tox-editor-header {
+  border-bottom: 1px solid rgb(134 132 132 / 15%);
+}
+
+.tox .tox-edit-area::before {
+  border: 0 !important;
+}
+
+.tox:not(.tox-tinymce-inline) .tox-editor-header {
+  background-color: var(
+    --ion-item-background,
+    var(--ion-background-color, #fff)
+  );
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: none;
+  padding: 4px 0;
+}
+
+.tox .tox-toolbar,
+.tox .tox-toolbar__overflow,
+.tox .tox-toolbar__primary {
+  background-attachment: local;
+  background-color: var(
+    --ion-item-background,
+    var(--ion-background-color, #fff)
+  );
+}
+
+.tox .tox-tbtn {
+  background: var(--ion-item-background, var(--ion-background-color, #fff));
+}
+
+.tox .tox-statusbar {
+  align-items: center;
+  background-color: var(
+    --ion-item-background,
+    var(--ion-background-color, #fff)
+  );
+}
+
+.tox .tox-tbtn svg {
+  display: block;
+  fill: #5d5b5b;
+}
+
+.tox-tinymce {
+  border: 2px solid #e3e4e4;
+}
+
+.tox .tox-bottom-anchorbar {
+  border-top: 1px solid #e9e4e4;
+}
+
+.tox .tox-statusbar a,
+.tox .tox-statusbar__path-item,
+.tox .tox-statusbar__wordcount {
+  color: #161f29;
+}
+
+.tox .tox-statusbar__branding svg {
+  fill: #161f29;
+}
+
+@media (prefers-color-scheme: dark) {
+  .tox:not(.tox-tinymce-inline) .tox-editor-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .tox-tinymce {
+    border: 2px solid #161f29;
+  }
+
+  .tox .tox-tbtn--disabled svg,
+  .tox .tox-tbtn--disabled:hover svg,
+  .tox .tox-tbtn:disabled svg,
+  .tox .tox-tbtn:disabled:hover svg {
+    fill: rgba(255, 255, 255, 0.5);
+  }
+
+  .tox .tox-tbtn svg {
+    display: block;
+    fill: #fff;
+  }
+
+  .tox .tox-bottom-anchorbar {
+    border-top: 0;
+  }
+
+  .tox .tox-statusbar {
+    align-items: center;
+    background-color: var(
+      --ion-item-background,
+      var(--ion-background-color, #fff)
+    );
+  }
+
+  .tox .tox-statusbar a,
+  .tox .tox-statusbar__path-item,
+  .tox .tox-statusbar__wordcount {
+    color: rgba(255, 255, 255, 0.75);
+  }
+
+  .tox .tox-statusbar__branding svg {
+    fill: rgba(255, 255, 255, 0.8);
+  }
+}
+
+/* TINYMCE: END - style overrides */

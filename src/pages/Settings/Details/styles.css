@@ -1,0 +1,36 @@
+ion-item:first-child {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+ion-item:last-child {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.company-logo-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.company-logo {
+  max-width: 100%;
+  max-height: 150px;
+  margin-top: 10px;
+  object-fit: contain;
+}
+
+ion-card {
+  margin-bottom: 1rem;
+  --background: #f5f5f5;
+}
+
+@media (prefers-color-scheme: dark) {
+  ion-card {
+    margin-bottom: 1rem;
+    --background: var(
+      --ion-card-background,
+      var(--ion-item-background, var(--ion-background-color, #fff))
+    );
+  }
+}

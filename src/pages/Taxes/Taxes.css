@@ -1,0 +1,82 @@
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.button-group {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  /* .button-group {
+    flex-direction: row;
+  } */
+
+  /* .button-group ion-button {
+    flex: 1;
+  } */
+}
+
+.summary-section {
+  margin-bottom: 24px;
+}
+
+.summary-section h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: var(--ion-color-dark);
+}
+
+.summary-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: var(--ion-color-light);
+  border-radius: 8px;
+}
+
+.summary-item.total {
+  background: var(--ion-color-primary);
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.summary-item .label {
+  font-size: 14px;
+}
+
+.summary-item .value {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.period-info {
+  margin-top: 24px;
+}
+
+.period-info h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  padding-left: 16px;
+  color: var(--ion-color-dark);
+}
+
+.period-info ion-item {
+  --padding-start: 16px;
+}

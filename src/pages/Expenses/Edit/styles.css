@@ -1,0 +1,175 @@
+ion-card {
+  margin-bottom: 1rem;
+  --background: #f5f5f5;
+}
+
+@media (prefers-color-scheme: dark) {
+  ion-card {
+    margin-bottom: 1rem;
+    --background: var(
+      --ion-card-background,
+      var(--ion-item-background, var(--ion-background-color, #fff))
+    );
+  }
+}
+
+.expense-form {
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+.edit-expense-container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 2rem;
+}
+
+.financials-section,
+.document-section {
+  margin-top: 1.5rem;
+  padding: 0 16px;
+}
+
+.document-preview-card {
+  position: relative;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+
+.document-preview {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+}
+
+.document-actions {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: var(--ion-background-color, #fff);
+  border-radius: 50%;
+  display: flex;
+}
+
+.scan-info-chips {
+  padding: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.scan-preview-card {
+  margin-bottom: 1.5rem;
+}
+
+.scan-preview-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  background-color: white;
+}
+
+.scan-options-buttons {
+  margin-top: 2rem;
+}
+
+.scan-error-container {
+  padding: 2rem;
+  text-align: center;
+}
+
+.document-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  border: 2px dashed var(--ion-color-medium);
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+.hidden-input {
+  display: none;
+}
+
+.upload-buttons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+
+.upload-button {
+  width: 100%;
+}
+
+.submit-button {
+  margin-top: 2rem;
+}
+
+/* Loading spinner container */
+.scan-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Success highlight for selected scan values */
+.selected-value {
+  font-weight: bold;
+  color: var(--ion-color-success);
+}
+
+/* Transition effects */
+.document-preview,
+.document-actions,
+.scan-info-chips ion-chip {
+  transition: all 0.2s ease-in-out;
+}
+
+.document-preview:hover {
+  transform: scale(1.02);
+}
+
+.document-fallback {
+  padding: 32px 16px;
+  text-align: center;
+  color: var(--ion-color-medium);
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.document-fallback p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.submit-button {
+  margin: 30px 16px 0;
+}
+
+@media (min-width: 768px) {
+  .upload-buttons {
+    flex-direction: row;
+  }
+}
