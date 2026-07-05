@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Paperwork</string>
+    <string name="title_activity_main">Paperwork</string>
+    <string name="package_name">nl.paperwork.app</string>
+    <string name="custom_url_scheme">nl.paperwork.app</string>
+</resources>

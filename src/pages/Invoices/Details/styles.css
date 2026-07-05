@@ -1,0 +1,152 @@
+ion-card {
+  margin-bottom: 1rem;
+  --background: #f5f5f5;
+}
+
+@media (prefers-color-scheme: dark) {
+  ion-card {
+    margin-bottom: 1rem;
+    --background: var(
+      --ion-card-background,
+      var(--ion-item-background, var(--ion-background-color, #fff))
+    );
+  }
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+.loading-container p {
+  margin-top: 16px;
+  color: var(--ion-color-medium);
+}
+
+.status-badge-container {
+  margin-top: 8px;
+}
+
+.price-value {
+  font-weight: 600 !important;
+  color: var(--ion-color-primary) !important;
+}
+
+/* Invoice line item styling */
+.invoice-line-item {
+  --padding-start: 8px;
+  --inner-padding-end: 8px;
+  margin-bottom: 4px;
+  --border-radius: 6px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--ion-color-light-tint, #f5f5f5);
+}
+
+/* Override Ionic's default list background */
+ion-card ion-list {
+  background: transparent !important;
+  border-radius: 6px;
+}
+
+ion-item:first-child {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+ion-item:last-child {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.list-ios {
+  background: transparent !important;
+}
+
+.invoice-line-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 8px 0;
+  justify-content: space-between;
+}
+
+.invoice-line-content p {
+  margin: 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.invoice-line-content p:first-child {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 39px; /* Make space for quantity indicator */
+  max-width: 100%;
+}
+
+.invoice-line-description {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.invoice-line-main {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.invoice-line-main strong {
+  flex: 1;
+  font-size: 16px;
+  color: var(--ion-color-dark);
+}
+
+.invoice-line-quantity {
+  margin-left: 12px;
+  font-size: 14px;
+  color: var(--ion-color-medium);
+  position: absolute;
+  right: 8px;
+}
+
+.invoice-line-price {
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--ion-color-primary);
+  align-self: flex-start;
+  margin-top: 4px;
+}
+
+.invoice-summary {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--ion-color-light-shade);
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.summary-row.total {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--ion-color-primary);
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid var(--ion-color-light);
+}
+
+.no-lines-message {
+  text-align: center;
+  color: var(--ion-color-medium);
+  padding: 16px 0;
+}

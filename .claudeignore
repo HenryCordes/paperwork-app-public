@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+coverage/
+
+# Native build artifacts (Android)
+android/.gradle/
+android/.idea/
+android/app/build/
+android/app/release/
+android/build/
+
+# Native build artifacts (iOS)
+ios/App/Pods/
+ios/App/build/
+ios/App/output/
+ios/DerivedData/
+ios/App/xcuserdata/
+
+# Secrets / credentials
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+keystore
+*.keystore
+*.jks
+android/keystore.properties
+android/app/google-services.json
+
+# Misc generated/local
+.DS_Store
+*.log
+.eslintcache
+repomix-output.xml

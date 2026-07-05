@@ -1,0 +1,46 @@
+ion-card {
+  margin-bottom: 1rem;
+  --background: #f5f5f5;
+}
+
+ion-card.login-card {
+  margin-inline: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  ion-card {
+    margin-bottom: 1rem;
+    --background: var(
+      --ion-card-background,
+      var(--ion-item-background, var(--ion-background-color, #fff))
+    );
+  }
+}
+
+.password-forgotten p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.password-forgotten p span,
+.password-forgotten p ion-button {
+  font-size: 14px;
+  --padding-start: 0;
+  --padding-end: 0;
+}
+
+.password-forgotten.login-smaller {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.password-forgotten.login-smaller p span,
+.password-forgotten.login-smaller p ion-button {
+  font-size: 12px;
+  --padding-start: 0;
+  --padding-end: 0;
+}

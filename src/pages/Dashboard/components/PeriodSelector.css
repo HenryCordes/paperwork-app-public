@@ -1,0 +1,39 @@
+.period-selector {
+  background-color: var(--ion-card-background);
+  border-radius: 8px;
+  margin-bottom: 16px;
+  margin-top: 4px;
+}
+
+.custom-select {
+  width: 100%;
+}
+
+/* Ensure the action sheet is wide enough */
+:root {
+  --ion-action-sheet-width: 90%;
+  --ion-action-sheet-max-width: 500px;
+}
+
+/* Additional styling for select items */
+ion-item {
+  --padding-start: 0;
+  --padding-end: 0;
+  --inner-padding-end: 0;
+}
+
+/* Make sure selected values are visible and not cut off */
+.select-text {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+}
+
+.label-stacked.label-period {
+  margin-bottom: 0 !important;
+  margin-top: 4px !important;
+}
+
+.select-wrapper {
+  min-height: 33px;
+}
